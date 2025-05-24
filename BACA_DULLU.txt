@@ -1,0 +1,19 @@
+ADMIN
+user : admin
+pass : admin
+
+DOKTER
+user : drjoni
+pass : drjoni
+
+PERAWAT
+user : budi
+pass : budi
+
+APOTEKER
+user : apoteker
+pass : apoteker
+
+PENDAFTARAN
+user : daftar
+pass : daftar
