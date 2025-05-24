@@ -17,3 +17,7 @@ pass : apoteker
 PENDAFTARAN
 user : daftar
 pass : daftar
+
+
+
+DB menggunakan MySQL ada di File  db_klinik.sql

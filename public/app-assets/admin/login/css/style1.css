@@ -1,0 +1,304 @@
+/*================================================================================
+
+	Item Name: Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template
+
+	Version: 2.0
+
+	Author: PIXINVENT
+
+	Author URL: http://www.themeforest.net/user/pixinvent
+
+================================================================================
+
+
+
+NOTE:
+
+------
+
+PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+
+.btn-login {
+  /*  border-color: #7367f0 !important;
+  background-color: #7367f0 !important; */
+  border-color: #0d30f7 !important;
+  background-color: #415dff !important;
+  color: #fff !important;
+}
+
+.btn-login:focus,
+.btn-login:active,
+.btn-login.active {
+  color: #fff;
+  background-color: #415dff !important;
+}
+
+.btn-login:hover:not(.disabled):not(:disabled) {
+  box-shadow: 0 8px 25px -8px #4e67f5;
+}
+
+.btn-login:not(:disabled):not(.disabled):active:focus {
+  box-shadow: none;
+}
+
+.brand-text {
+  color: #6d6e71 !important;
+}
+
+.navigation {
+  font-size: 0.97rem !important;
+}
+
+.dropdown-menu {
+  font-size: 0.87rem !important;
+}
+
+.vertical-layout.vertical-menu-modern.menu-collapsed
+  .main-menu:not(.expanded)
+  .navigation
+  li.active
+  a {
+  background: #eeebeb !important;
+  box-shadow: none !important;
+}
+
+.main-menu.menu-light .navigation > li.active > a {
+  background: linear-gradient(#a2a5aa, #a2a5aa, #a2a5aa) !important;
+  box-shadow: 0 0 10px 1px #a2a5aa !important;
+}
+
+.main-menu.menu-light .navigation > li ul .active {
+  background: linear-gradient(#a2a5aa, #a2a5aa, #a2a5aa) !important;
+  box-shadow: 0 0 10px 1px #a2a5aa !important;
+}
+
+.action-item {
+  display: block;
+  width: 100%;
+  padding: 0.25rem;
+  clear: both;
+  font-weight: 400;
+  color: #6e6b7b;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+
+.funnel-chart {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  aspect-ratio: 30/13;
+  /* height: 320px; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@media (max-width: 576px) {
+  .funnel-chart {
+    font-size: 0.5rem;
+  }
+}
+
+.funnel-chart span:nth-child(3),
+.funnel-chart span:nth-child(4) {
+  color: #232323;
+}
+
+.funnel-label {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  align-items: stretch;
+  justify-items: center;
+  gap: 0.5rem;
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+  .funnel-label {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .funnel-label {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .funnel-label {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 1rem;
+  }
+}
+
+.funnel-label .funnel-label__item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.funnel-label .funnel-label__item .box {
+  border: 2px solid;
+  border-radius: 6px;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  padding: 0.75rem 0.5rem;
+  width: 100%;
+  flex-grow: 1;
+}
+
+@media (max-width: 576px) {
+  .funnel-label .funnel-label__item h4 {
+    font-size: 1rem;
+  }
+  .funnel-label .funnel-label__item p {
+    font-size: 0.625rem !important;
+    margin-top: 0.25rem;
+    line-height: 1.4;
+  }
+}
+
+/* .funnel-label .funnel-label__item .box p {
+  white-space: nowrap;
+} */
+
+.funnel-label .funnel-label__item.f0 .box {
+  background: rgba(217, 106, 105, 0.2);
+  border-color: #d96a69;
+}
+
+.funnel-label .funnel-label__item.f1 .box {
+  background: rgba(227, 152, 120, 0.2);
+  border-color: #e39878;
+}
+
+.funnel-label .funnel-label__item.f2 .box {
+  background: rgba(226, 214, 115, 0.2);
+  border-color: #e2d673;
+}
+
+.funnel-label .funnel-label__item.f3 .box {
+  background: rgba(115, 224, 106, 0.2);
+  border-color: #73e06a;
+}
+
+.funnel-label .funnel-label__item.f4 .box {
+  background: rgba(109, 182, 90, 0.2);
+  border-color: #6db65a;
+}
+
+.funnel-label .funnel-label__item.f5 .box {
+  background: rgba(138, 97, 204, 0.2);
+  border-color: #8a61cc;
+}
+
+.speedometer {
+  position: relative;
+}
+
+.speedometer .value {
+  width: 30%;
+  max-width: 48px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  bottom: -15px;
+  transform: translate(-59%, 23%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.speedometer .arrow {
+  width: 4px;
+  height: 50%;
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  transform: translate(-159%, 23%);
+  z-index: 1;
+  border-radius: 4px;
+  transform-origin: bottom center;
+}
+
+.speedometer.disabled {
+  opacity: 0.75;
+}
+
+.speedometer.disabled::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 110%;
+  height: 140%;
+  transform: translate(-50%, -40%);
+  background-color: rgba(10, 10, 10, 0.85);
+}
+
+.autocomplete-suggestions {
+  border: 1px solid #d8d6de;
+  border-radius: 6px;
+  background: #fff;
+  overflow: auto;
+}
+.autocomplete-suggestion {
+  padding: 8px 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: pointer;
+}
+.autocomplete-suggestion:hover {
+  background: rgba(117, 50, 117, 0.15);
+}
+.autocomplete-selected {
+  background: #f0f0f0;
+}
+.autocomplete-suggestions strong {
+  font-weight: normal;
+  color: #3399ff;
+}
+.autocomplete-group {
+  padding: 2px 5px;
+}
+.autocomplete-group strong {
+  display: block;
+  border-bottom: 1px solid #000;
+}
+
+.navbar-header .brand-logo-expanded {
+  display: none;
+}
+.navbar-header.expanded .brand-logo {
+  display: none;
+}
+.navbar-header.expanded .brand-logo-expanded {
+  display: inline;
+}
+
+.apexcharts-data-labels {
+  transform: translateY(-10px);
+}
+
+
+.centered-div {
+    display: flex;
+    justify-content: center; /* horizontal */
+    align-items: center;     /* vertical */
+}
